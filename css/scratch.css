@@ -1,0 +1,96 @@
+/* Global page styles */
+body {
+    background: linear-gradient(to bottom right, #fef9f5, #ffe1c4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+.header {
+    background-color: #57c9e3;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    margin: 0 12px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Content containers */
+.intro, .lists, .video-section, .facts, .tableau {
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+/* Intro image tweaks */
+.intro img {
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* List section */
+.lists ol {
+    background-color: #fff5ec;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lists li {
+    margin: 10px 0;
+}
+
+/* YouTube and Tableau embeds */
+.video-section iframe,
+.tableau iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #d84315;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .intro, .lists, .video-section, .facts, .tableau {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .intro img {
+        width: 80% !important;
+    }
+}
